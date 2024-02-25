@@ -4,7 +4,7 @@ import { PropsWithChildren, useEffect, useRef, useState } from 'react';
 
 import useScreen from '@/hooks/useScreen';
 
-import styles from './Layout.module.css';
+import styles from './layout.module.css';
 import Navbar from './navbar';
 import { NavSocialLinks } from './navbar/Navbar';
 
