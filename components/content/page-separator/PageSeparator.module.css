@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100px;
+}
+
+.primary,
+.secondary {
+  fill: #000;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.primary {
+  top: 0%;
+  animation: primary 10s linear infinite;
+}
+
+.secondary {
+  animation: secondary 10s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}

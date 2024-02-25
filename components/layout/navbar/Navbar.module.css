@@ -1,0 +1,39 @@
+.navbar {
+  position: static;
+}
+
+.navbar-home {
+  position: fixed;
+}
+
+.navbar,
+.navbar-home {
+  width: 100%;
+  height: var(--navbar-size);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.content {
+  height: 100%;
+  padding: 25px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section {
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.section:last-child {
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 100%;
+  object-fit: contain;
+}

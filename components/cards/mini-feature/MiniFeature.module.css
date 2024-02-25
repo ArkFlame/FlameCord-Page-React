@@ -1,0 +1,25 @@
+.card {
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 20px;
+  background: #1d1d1d;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 140ms ease-in-out;
+}
+
+.card:hover {
+  background: #2d2d2d;
+  transform: scale(1.02);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.description {
+  font-weight: lighter;
+  font-size: 15px;
+}

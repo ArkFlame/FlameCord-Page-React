@@ -8,7 +8,6 @@ import { ToastContainer } from 'react-toastify';
 import Layout from '@/components/layout';
 import theme from '@/theme';
 import '../theme/globals.css';
-import '../theme/variables.css';
 
 // Libraries CSS.
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,9 +17,12 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <Head>
         <title>FlameCord</title>
-        <meta name="description" content="This is just an example" />
+        <meta
+          name="description"
+          content="Enhance your Minecraft server with FlameCord: advanced security, top performance, seamless compatibility. Elevate your experience!"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icon@32.png" />
+        <link rel="icon" href="/flame.png" />
       </Head>
 
       {process.env.NODE_ENV === 'production' && <Analytics />}
