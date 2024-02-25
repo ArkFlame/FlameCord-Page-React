@@ -1,0 +1,16 @@
+:root {
+  /* Primary */
+  --primary: #9a83ff;
+  --primary-transparent: #9a83ffb2;
+  --primary-bg: #611eb5;
+  --primary-hl: #44008b;
+  --primary-hl-alpha: #44008b4d;
+  --primary-shadow: #5300aa;
+  --primary-alpha: #5300aa11;
+
+  /* Secondary */
+  --secondary: #3cc2ed;
+  --secondary-bg: #1a006b;
+  --secondary-hl: #1554b1;
+  --secondary-shadow: #2b0057;
+}
