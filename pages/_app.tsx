@@ -2,9 +2,9 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { ToastContainer } from 'react-toastify';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { ToastContainer } from 'react-toastify';
 
 // Components.
 import Layout from '@/components/layout';
