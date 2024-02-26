@@ -3,6 +3,8 @@ import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ToastContainer } from 'react-toastify';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 // Components.
 import Layout from '@/components/layout';
@@ -13,6 +15,20 @@ import '../theme/globals.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      window.scrollTo(0, 0);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <ChakraProvider theme={theme}>
       <Head>
