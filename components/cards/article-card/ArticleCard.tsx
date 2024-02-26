@@ -12,6 +12,19 @@ export interface ArticleProps {
 
 export function ArticleCard({ article }: ArticleProps) {
   const screen = useScreen();
+  const router = useRouter(); // Initialize useRouter
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      window.scrollTo(0, 0); // Scroll to top on route change
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange); // Listen to route changes
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange); // Cleanup event listener
+    };
+  }, [router.events]); // Depend on router.events
 
   return (
     <Link href={`/a/${article.slug}`}>
