@@ -1,5 +1,5 @@
 ## Installing FlameCord From Scratch
-1. **Download** the latest FlameCord release from the [official website](https://example.com) or [GitHub repository](https://github.com/FlameCord).
+1. **Download** the latest FlameCord release from [BuiltByBit](https://builtbybit.com/resources/flamecord-ultimate-antibot-solution.13492/).
 2. **Extract** the FlameCord files to a directory on your server.
 3. **Configure** the FlameCord settings according to your server requirements, including network settings, port configurations, and security measures.
 4. **Run** the FlameCord JAR file using Java to launch the proxy server.
