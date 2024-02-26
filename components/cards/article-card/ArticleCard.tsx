@@ -1,7 +1,5 @@
 import { Card, CardBody, Image, Text } from '@chakra-ui/react';
 import Link from 'next/link';
-import { useRouter } from 'next/router'; // Import useRouter
-import { useEffect } from 'react'; // Import useEffect
 
 import useScreen from '@/hooks/useScreen';
 import Article from '@/lib/article';
@@ -14,19 +12,6 @@ export interface ArticleProps {
 
 export function ArticleCard({ article }: ArticleProps) {
   const screen = useScreen();
-  const router = useRouter(); // Initialize useRouter
-
-  useEffect(() => {
-    const handleRouteChange = () => {
-      window.scrollTo(0, 0); // Scroll to top on route change
-    };
-
-    router.events.on('routeChangeComplete', handleRouteChange); // Listen to route changes
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange); // Cleanup event listener
-    };
-  }, [router.events]); // Depend on router.events
 
   return (
     <Link href={`/a/${article.slug}`}>
