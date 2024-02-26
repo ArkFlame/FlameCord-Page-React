@@ -6,6 +6,9 @@ import Article from '@/lib/article';
 
 import styles from './ArticleCard.module.css';
 
+import { useRouter } from 'next/router'; // Import useRouter
+import { useEffect } from 'react'; // Import useEffect
+
 export interface ArticleProps {
   article: Article;
 }
