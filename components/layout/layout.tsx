@@ -27,6 +27,13 @@ export function Layout({ children }: PropsWithChildren) {
     });
   }, [ref]);
 
+  useEffect(() => {
+    const page = ref.current;
+    if (!page) return;
+
+    page.scrollTop = 0;
+  }, [pathname]);
+
   return (
     <Flex className={styles.layout}>
       <Navbar scrolled={scrolled} />
