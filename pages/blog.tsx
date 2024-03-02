@@ -37,7 +37,7 @@ export default function Home({ articles }: HomeProps) {
           width={'95%'}
           maxWidth={'1000px'}
           alignItems={'center'}
-          justifyContent={'center'}
+          justifyItems={'center'}
         >
           {articles.map((article, index) => (
             <ArticleCard article={article} key={index} />
