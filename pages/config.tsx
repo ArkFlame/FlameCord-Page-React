@@ -15,7 +15,7 @@ export default function Config() {
         <section id="configuration-guide" className="guide-section">
           <h1>FlameCord Configuration Guide</h1>
           <p>
-            Learn how to configure FlameCord to enhance your server's security
+            Learn how to configure FlameCord to enhance your server&apos;s security
             and performance.
           </p>
         </section>
@@ -218,7 +218,7 @@ export default function Config() {
         <section id="antibot" className="config-section">
           <h2 className="section-title">AntiBot Configuration</h2>
           <p className="section-description">
-            Enhance security with FlameCord's AntiBot features.
+            Enhance security with FlameCord&apos;s AntiBot features.
           </p>
 
           <div className="config-subsection">
@@ -466,8 +466,8 @@ export default function Config() {
           <div className="config-subsection">
             <h3>Lockdown Mode</h3>
             <p>
-              Configure the settings for FlameCord's Lockdown Mode to enhance
-              your server's security.
+              Configure the settings for FlameCord&apos;s Lockdown Mode to enhance
+              your server&apos;s security.
             </p>
             <ul className="config-options">
               <li>
