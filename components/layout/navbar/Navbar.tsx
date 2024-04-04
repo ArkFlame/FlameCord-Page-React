@@ -100,6 +100,7 @@ export function Navbar({ scrolled }: NavbarProps) {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/faq">Faq</NavLink>
+          <NavLink href="/config">Config</NavLink>
           {screen != 'mobile' && (
             <NavLink href={PRODUCT_LINK}>Download</NavLink>
           )}
