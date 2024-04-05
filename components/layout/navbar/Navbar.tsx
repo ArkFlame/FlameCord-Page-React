@@ -1,4 +1,5 @@
-import { Button, Flex, IconButton, Image, Link } from '@chakra-ui/react';
+import { Button, Flex, IconButton, Image } from '@chakra-ui/react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { JSXElementConstructor, PropsWithChildren, ReactElement } from 'react';
 import {
@@ -21,29 +22,15 @@ interface NavLink extends PropsWithChildren {
 }
 
 export function NavLink({ children, href }: NavLink) {
-  const { pathname, push: navigateTo } = useRouter();
+  const { pathname } = useRouter();
   const isActive = pathname === href;
-  const isExternal = href.startsWith('http');
 
   const btn = (
-    <Button
-      variant={isActive ? 'outline' : 'ghost'}
-      onClick={() => {
-        if (!isExternal) {
-          navigateTo(href);
-        }
-      }}
-    >
-      {children}
-    </Button>
+    <Button variant={isActive ? 'outline' : 'ghost'}>{children}</Button>
   );
 
-  return isExternal ? (
-    <Link isExternal href={href}>
-      {btn}
-    </Link>
-  ) : (
-    btn
+  return (
+    <Link href={href}>{btn}</Link>
   );
 }
 
@@ -55,7 +42,7 @@ interface NavSocialProps {
 
 function NavSocial({ icon, url }: NavSocialProps) {
   return (
-    <Link isExternal href={url}>
+    <Link href={url}>
       <IconButton aria-label="Social link" icon={icon} variant={'ghost'} />
     </Link>
   );
