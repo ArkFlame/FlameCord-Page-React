@@ -1,6 +1,6 @@
-import { ChakraBaseProvider } from '@chakra-ui/react';
 //import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
+import dynamic from "next/dynamic";
 import Head from 'next/head';
 import { ToastContainer } from 'react-toastify';
 
@@ -12,9 +12,13 @@ import '../theme/globals.css';
 // Libraries CSS.
 import 'react-toastify/dist/ReactToastify.css';
 
+const ChakraProvider = dynamic(() => import("@chakra-ui/provider").then(
+    (mod) => mod.ChakraProvider)
+);
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraBaseProvider theme={theme}>
+    <ChakraProvider theme={theme}>
       <Head>
         <title>FlameCord: Enhance Your Minecraft Server Performance</title>
         <meta
@@ -43,6 +47,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </ChakraBaseProvider>
+    </ChakraProvider>
   );
 }
