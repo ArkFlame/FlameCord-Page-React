@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraBaseProvider } from '@chakra-ui/react';
 //import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -14,7 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraBaseProvider theme={theme}>
       <Head>
         <title>FlameCord: Enhance Your Minecraft Server Performance</title>
         <meta
@@ -43,6 +43,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </ChakraProvider>
+    </ChakraBaseProvider>
   );
 }
