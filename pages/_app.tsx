@@ -1,5 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import { Analytics } from '@vercel/analytics/react';
+//import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ToastContainer } from 'react-toastify';
@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/flame.png" />
       </Head>
 
-      {process.env.NODE_ENV === 'production' && <Analytics />}
+      {/*process.env.NODE_ENV === 'production' && <Analytics />*/}
       <ToastContainer />
 
       <Layout>
