@@ -64,7 +64,7 @@ export default function Home({ articles }: HomeProps) {
         {/* Title and subtitle */}
         <Flex flexDir={'column'} gap={'10px'} textAlign={'center'}>
           {/* Title */}
-          <Heading fontSize={screen == 'desktop' ? '8xl' : '6xl'}>
+          <Heading as="h1" fontSize={screen == 'desktop' ? '8xl' : '6xl'}>
             FlameCord
           </Heading>
 
