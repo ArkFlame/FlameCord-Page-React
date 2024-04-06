@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>FlameCord: Enhance Your Minecraft Server Performance</title>
+        <title>FlameCord - Enhance Your Minecraft Server Performance</title>
         <meta
           name="description"
           content="Optimize your Minecraft server with FlameCord's advanced security, top performance, and seamless compatibility. Elevate your gaming experience today!"
