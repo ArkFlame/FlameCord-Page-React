@@ -36,6 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="https://www.flamecord.com/banner.png"/>
         <meta property="og:url" content="https://www.flamecord.com"/>
         <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="FlameCord"/>
 
         <link rel="canonical" href="https://www.flamecord.com" />
         <link rel="icon" href="/flame.png" />
