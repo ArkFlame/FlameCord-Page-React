@@ -76,7 +76,7 @@ export default function ArticlePage(props: ArticlePageProps) {
             </Flex>
           </Flex>
 
-          <Flex height={'100%'} flexDir={'column'} gap={'20px'}>
+          <Flex height={'100%'} flexDir={'column'} gap={'20px'} margin={'20px'}>
             <MarkdownRenderer>
               {article?.content || 'Error fetching content.'}
             </MarkdownRenderer>
