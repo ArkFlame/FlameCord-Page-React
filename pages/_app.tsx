@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <meta property="og:title" content="FlameCord: Enhance Your Minecraft Server Performance"/>
         <meta property="og:description" content="Optimize your Minecraft server with FlameCord's advanced security, top performance, and seamless compatibility. Elevate your gaming experience today!"/>
-        <meta property="og:image" content="https://www.flamecord.com/banner.png"/>
+        <meta property="og:image" content="https://www.flamecord.com/banner.jpg"/>
         <meta property="og:url" content="https://www.flamecord.com"/>
         <meta property="og:type" content="website"/>
         <meta property="og:site_name" content="FlameCord"/>
