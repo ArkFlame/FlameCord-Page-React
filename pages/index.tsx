@@ -168,7 +168,7 @@ export default function Home({ articles }: HomeProps) {
           </Heading>
 
           <Text maxWidth={'700px'} fontSize={'19px'} fontWeight={'hairline'}>
-            Our features are focused on the security of your Minecraft server
+            FlameCord features are focused on the security of your Minecraft server
             preventing hacking with crash exploits, bots and other kind of ddos
             attacks on the application layer.
           </Text>
@@ -254,7 +254,7 @@ export default function Home({ articles }: HomeProps) {
           </Heading>
 
           <Text maxWidth={'700px'} fontSize={'19px'} fontWeight={'hairline'}>
-            Our product has more than 9,000 downloads, 2,000 purchases and more
+            FlameCord has more than 9,000 downloads, 2,000 purchases and more
             than 100 reviews from our customers.
           </Text>
         </Flex>
@@ -366,7 +366,7 @@ export default function Home({ articles }: HomeProps) {
           </Heading>
 
           <Text maxWidth={'700px'} fontSize={'19px'} fontWeight={'hairline'}>
-            We have a blog where we post updates, news and tutorials about
+            FlameCord a blog where we post updates, news and tutorials about
             FlameCord and Minecraft server management.
           </Text>
         </Flex>
