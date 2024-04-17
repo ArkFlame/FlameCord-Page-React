@@ -85,7 +85,7 @@ export function Navbar({ scrolled }: NavbarProps) {
         width={screen == 'mobile' ? undefined : '90%'}
       >
         <Flex className={styles.section}>
-          <Image className={styles.logo} src="/flame.png" alt="logo" height="100" width="100" />
+          <Image className={styles.logo} src="/flame.png" alt="FlameCord Logo" height="100" width="100" />
           <NavLink href="/">Home</NavLink>
           <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/faq">Faq</NavLink>
