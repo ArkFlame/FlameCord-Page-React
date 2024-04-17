@@ -1,7 +1,7 @@
 import { Flex, Icon, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 
-import Image from 'next/image';
 
 import { Review } from '@/config/reviews';
 

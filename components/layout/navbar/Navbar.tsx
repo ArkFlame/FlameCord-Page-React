@@ -1,4 +1,5 @@
 import { Button, Flex, IconButton } from '@chakra-ui/react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { JSXElementConstructor, PropsWithChildren, ReactElement } from 'react';
@@ -10,7 +11,6 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 
-import Image from 'next/image';
 
 import { PRODUCT_LINK } from '@/config/product';
 import { DISCORD, INSTAGRAM, REDDIT, TIKTOK, TWITTER } from '@/config/social';

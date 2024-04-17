@@ -11,10 +11,8 @@ import {
   Tr,
   useColorMode,
 } from '@chakra-ui/react';
-
-import Image from 'next/image';
-
 import Markdown, { ReactRenderer } from 'marked-react';
+import Image from 'next/image';
 
 type CustomReactRenderer = Partial<ReactRenderer>;
 

@@ -1,5 +1,4 @@
 import { Card, CardBody, Heading, Text } from '@chakra-ui/react';
-
 import Image from 'next/image';
 
 import styles from './FeatureCard.module.css';
