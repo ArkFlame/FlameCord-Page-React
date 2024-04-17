@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:site_name" content="FlameCord"/>
 
         <link rel="canonical" href="https://www.flamecord.com" />
-        <link rel="icon" href="/flame.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/*process.env.NODE_ENV === 'production' && <Analytics />*/}

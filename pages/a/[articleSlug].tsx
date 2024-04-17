@@ -42,9 +42,6 @@ export default function ArticlePage(props: ArticlePageProps) {
         <meta name="twitter:description" content={article?.description}></meta>
         <meta name="twitter:site" content="@FlameCordMC"></meta>
         <meta name="twitter:creator" content="@FlameCordMC"></meta>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/flame.png" />
       </Head>
 
       <Flex width={'100%'} justifyContent={'center'}>
