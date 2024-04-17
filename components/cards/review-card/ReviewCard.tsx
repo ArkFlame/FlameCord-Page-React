@@ -1,5 +1,7 @@
-import { Flex, Icon, Image, Text } from '@chakra-ui/react';
+import { Flex, Icon, Text } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
+
+import Image from 'next/image';
 
 import { Review } from '@/config/reviews';
 
@@ -16,6 +18,8 @@ export function ReviewCard({ review }: ReviewCardProps) {
         className={styles.avatar}
         src={review.avatar}
         alt={review.username + "'s Avatar"}
+        width="96"
+        height="96"
       />
       <Flex className={styles.data}>
         <Flex className={styles.header}>

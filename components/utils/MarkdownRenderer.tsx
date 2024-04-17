@@ -2,7 +2,6 @@
 
 import {
   Heading,
-  Image,
   Link,
   Table,
   TableContainer,
@@ -12,6 +11,9 @@ import {
   Tr,
   useColorMode,
 } from '@chakra-ui/react';
+
+import Image from 'next/image';
+
 import Markdown, { ReactRenderer } from 'marked-react';
 
 type CustomReactRenderer = Partial<ReactRenderer>;
@@ -23,7 +25,7 @@ const renderer: CustomReactRenderer = {
   },
   image(src: string, alt: string) {
     const fixedSrc = `/api/image?url=${encodeURIComponent(src)}`;
-    return <Image src={fixedSrc} alt={alt} />;
+    return <Image src={fixedSrc} alt={alt} width="1280" height="720"/>;
   },
   link(href: string, text: string) {
     return (

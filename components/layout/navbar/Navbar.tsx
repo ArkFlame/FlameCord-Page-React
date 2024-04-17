@@ -1,4 +1,4 @@
-import { Button, Flex, IconButton, Image } from '@chakra-ui/react';
+import { Button, Flex, IconButton } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { JSXElementConstructor, PropsWithChildren, ReactElement } from 'react';
@@ -9,6 +9,8 @@ import {
   FaTiktok,
   FaTwitter,
 } from 'react-icons/fa';
+
+import Image from 'next/image';
 
 import { PRODUCT_LINK } from '@/config/product';
 import { DISCORD, INSTAGRAM, REDDIT, TIKTOK, TWITTER } from '@/config/social';
@@ -83,7 +85,7 @@ export function Navbar({ scrolled }: NavbarProps) {
         width={screen == 'mobile' ? undefined : '90%'}
       >
         <Flex className={styles.section}>
-          <Image className={styles.logo} src="/flame.png" alt="logo" />
+          <Image className={styles.logo} src="/flame.png" alt="logo" height="100" width="100" />
           <NavLink href="/">Home</NavLink>
           <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/faq">Faq</NavLink>

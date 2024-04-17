@@ -1,5 +1,6 @@
-import { Card, CardBody, Image, Text } from '@chakra-ui/react';
+import { Card, CardBody, Text } from '@chakra-ui/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import useScreen from '@/hooks/useScreen';
 import Article from '@/lib/article';
@@ -23,6 +24,8 @@ export function ArticleCard({ article }: ArticleProps) {
           alt="Article thumbnail"
           className={styles.thumbnail}
           src={article.thumbnail}
+          width="800"
+          height="600"
         />
 
         <CardBody className={styles.body}>
