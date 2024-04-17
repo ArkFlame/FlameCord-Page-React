@@ -19,7 +19,7 @@ function resolveArticles() {
     return {
       ...json,
       slug: child,
-      thumbnail: `${getURL()}/articles/${child}/thumbnail.jpg`,
+      thumbnail: `/articles/${child}/thumbnail.jpg`,
     };
   });
 

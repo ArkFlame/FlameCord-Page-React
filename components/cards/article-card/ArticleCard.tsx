@@ -13,7 +13,7 @@ export interface ArticleProps {
 
 export function ArticleCard({ article }: ArticleProps) {
   const screen = useScreen();
-
+  
   return (
     <Link href={`/a/${article.slug}`}>
       <Card
