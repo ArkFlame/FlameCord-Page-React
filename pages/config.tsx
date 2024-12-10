@@ -1,5 +1,6 @@
-import Error from '@/components/content/error/Error';
 import { Flex, Heading } from '@chakra-ui/react';
+
+import Error from '@/components/content/error/Error';
 import MarkdownRenderer from '@/components/utils/MarkdownRenderer';
 import { getURL } from '@/lib/utils';
 
