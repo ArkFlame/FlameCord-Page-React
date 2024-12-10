@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 import Article from './article';
-import { getURL } from './utils';
 
 let cached: Article[] | null = null;
 let cachedContent: { [key: string]: string } = {};
@@ -67,4 +66,19 @@ export function getLastArticles(limit: number) {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
   return sorted.slice(0, limit);
+}
+
+let cachedConfigContent: String | null = null;
+
+export function getConfig() {
+  if (cachedConfigContent != null) {
+    return cachedConfigContent;
+  }
+  const contentPath = path.resolve(
+    './public',
+    'config.md',
+  );
+  const content = fs.readFileSync(contentPath, 'utf-8') || "Contact the server administrator.";
+  cachedConfigContent = content;
+  return content;
 }
